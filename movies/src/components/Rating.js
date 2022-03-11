@@ -10,7 +10,6 @@ const Rating = ({value, handleChange, name}) => {
     const changeSelected = (e) => {
         e.persist();
         setCurrent(parseInt(e.target.value))
-        console.log(e.target.value)
       }
 
 

@@ -3,7 +3,6 @@ import { Row ,Col, Form} from 'react-bootstrap'
 import Rating from './Rating'
 
 const EditForm = ({updateMovie ,movie}) => {
-  console.log(movie)
   const [name, setname] = useState(movie.name)
   const [year, setYear] = useState(movie.year)
   const [director, setDirector] = useState(movie.director)

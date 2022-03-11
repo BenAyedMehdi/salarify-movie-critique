@@ -20,19 +20,16 @@ const Movies = ({ updateMovie, onDelete, add, movies ,hideAdd, addMovie}) => {
 
   const onClick = async (id) => {
     const movieClicked = await DAO.getMovie(id)
-    console.log(movieClicked)
     setMovieToShow(movieClicked)
     setModalShow(true)
   }
   const editMovie = async (id) => {
     const movieClicked = await DAO.getMovie(id)
-    console.log(movieClicked)
     setMovieToShow(movieClicked)
     setModalShow(false)
     setModalEdit(true)
   }
   const onUpdate = (movie)=>{
-    console.log(movie)
     setMovieToShow()
     setModalEdit(false)
     updateMovie(movie)

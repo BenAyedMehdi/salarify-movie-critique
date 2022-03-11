@@ -21,7 +21,6 @@ function App() {
 
   const updateMovie = async (movie) => {
     const data = await DAO.updateMovie(movie)
-    console.log('the movie is edited')
     const updatedMovies = [...movies.filter(item=>item.id!=movie.id), movie].sort((a,b)=> (
       a.id>b.id ? 1:-1
     ))
@@ -32,7 +31,6 @@ function App() {
   const deleteMovie = async (id) => {
     const res = await DAO.deleteMovie(id)
     if(res.data){
-      console.log('deleted')
       setMovies((movies) => (
         movies.filter((movie) => (
           movie.id != id
@@ -46,7 +44,6 @@ function App() {
   }
   const addMovie = async (movie) => {
     const data = await DAO.addMovie(movie)
-    console.log('Added')
     setMovies([...movies, data])
     setAdding(false)
   }
@@ -63,5 +60,4 @@ function App() {
     </Router>
   );
 }
-//<Add show={addShow} onHide={() => setAddShow(false)}/>
 export default App;

@@ -7,7 +7,6 @@ const Details = ({movie}) => {
     const avg = rates.reduce((prev,cur)=>{
         return prev+cur[1]
     }, 0)/rates.length
-    //console.log(avg);
 
   return (
     <div className="col pb-1">

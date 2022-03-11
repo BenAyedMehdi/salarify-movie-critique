@@ -24,7 +24,3 @@ const Movie = ({ movie, onClick }) => {
 }
 
 export default Movie
-/*
-<LinkContainer to={`/${movie.id}`}>
-                    <Button onClick={()=> onClick(movie.id)} variant="primary">View</Button>
-                </LinkContainer>*/
