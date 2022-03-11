@@ -13,18 +13,18 @@ In this project , I used the following module :
 - __react-bootstrap__
 - __concurrently__
 
-# Instractions to strat the program
+# Instractions to start the program
 
-- Clone the gitHub repository
 ### git clone https://github.com/BenAyedMehdi/salarify-movie-critique
+- Clone the gitHub repository
 
-- Access the solution foler "salarify-movie-critique\movies"
 ### cd movies
+- Access the solution folder "salarify-movie-critique\movies"
 
-- Install all dependancies using this command: 
 ### npm install
+- Install all dependancies using this command
 
-- Use the following command to run json-server on port 5000 and run the app locally on port 3000 
 ### npm run dev
+- Use this command to run json-server on port 5000 and run the app locally on port 3000 
 
 
